@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_care_nurse/screens/contact_page.dart';
 
 import 'package:health_care_nurse/utils/config.dart';
 
@@ -46,9 +47,9 @@ class InboxPage extends StatelessWidget {
               final doctor = Doctors[index];
               return ListTile(
                 onTap: (){
-                //  Navigator.push(context, MaterialPageRoute(
-                //              builder: (context) =>ContactPage(), 
-                 //              ) );
+                  Navigator.push(context, MaterialPageRoute(
+                              builder: (context) =>ContactPage(), 
+                               ) );
                 },
                 leading: CircleAvatar(backgroundImage: AssetImage(doctor.picture), radius:30,),
                 title: Text(doctor.name, style: TextStyle(

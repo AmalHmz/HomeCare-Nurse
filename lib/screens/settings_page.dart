@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:health_care_nurse/screens/profile_page.dart';
 
 class SettingsPage extends StatelessWidget{
   @override
@@ -32,7 +33,11 @@ class SettingsPage extends StatelessWidget{
           ),
           Divider(height: 50),
           ListTile(
-            onTap: ( ) {},
+            onTap: ( ) {
+               Navigator.push(context, MaterialPageRoute(
+                              builder: (context) =>ProfilePage(), 
+                               ) );
+            },
             leading: Container(
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
@@ -96,28 +101,7 @@ class SettingsPage extends StatelessWidget{
             ),),
             trailing: Icon(Icons.arrow_forward_ios_rounded),
           ),
-          SizedBox(height: 20),
-          ListTile(
-            onTap: ( ) {},
-            leading: Container(
-              padding: EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                color: Colors.green.shade100,
-                shape: BoxShape.circle,
-              ),
-              child: Icon(
-                Icons.settings_suggest_outlined,
-              color: Colors.green,
-              size: 35,
-              ),
-            ),
-            title: Text("General",
-            style: TextStyle(
-              fontWeight: FontWeight.w500,
-              fontSize: 20,
-            ),),
-            trailing: Icon(Icons.arrow_forward_ios_rounded),
-          ),
+          
           SizedBox(height: 20),
           ListTile(
             onTap: ( ) {},

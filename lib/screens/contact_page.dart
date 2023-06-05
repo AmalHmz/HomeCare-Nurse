@@ -59,22 +59,25 @@ class ContactPage extends StatelessWidget {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        SizedBox(height:20),
+        SizedBox(height:50),
         Text(
           ' Contacts !',
           style: TextStyle(
-            fontSize: 20,
+            fontSize: 40,
             fontWeight: FontWeight.bold,
             color: Colors.black,
              decoration: TextDecoration.none,
           ),
         ),
 
-         SizedBox(height:16),
+         SizedBox(height:40),
         ElevatedButton.icon(
           onPressed: launchTel,
           icon: Icon(CupertinoIcons.phone),
-          label: Text('Call phone'),
+          label: Text('Call phone',
+          style: TextStyle(
+            fontSize: 20,
+          ),),
            style: ButtonStyle(
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
@@ -91,7 +94,10 @@ class ContactPage extends StatelessWidget {
         ElevatedButton.icon(
           onPressed: launchSms,
           icon: Icon(CupertinoIcons.add),
-          label: Text('Send Sms'),
+          label: Text('Send Sms',
+          style: TextStyle(
+            fontSize: 20,
+          ),),
            style: ButtonStyle(
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
@@ -110,7 +116,10 @@ class ContactPage extends StatelessWidget {
          ElevatedButton.icon(
           onPressed: launchEmail,
           icon: Icon(CupertinoIcons.mail),
-          label: Text('Send Email'),
+          label: Text('Send Email',
+          style: TextStyle(
+            fontSize: 20,
+          ),),
            style: ButtonStyle(
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
